@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1e3c72;
+  animation: gradientShift 5s infinite alternate;
+}
+
+@keyframes gradientShift {
+  0% {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+  }
+  50% {
+    background: linear-gradient(135deg, #2a5298, #1e3c72);
+  }
+}
+
+.content {
+  z-index: 10;
+  text-align: center;
+  animation: fadeInContent 2s ease-out;
+}
+
+.fade-in-heading {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeInHeading 2s ease-out forwards;
+}
+
+.animated-tagline {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeInTagline 2s ease-out 0.5s forwards;
+}
+
+@keyframes fadeInHeading {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInTagline {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: white;
+  background-color: #2a5298;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeInButtons 2s ease-out 1s forwards;
+}
+
+button:hover {
+  background-color: #1e3c72;
+  transform: scale(1.1);
+}
+
+@keyframes fadeInButtons {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#explore-section {
+  background-color: #16213e;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#explore-section h2 {
+  font-size: 2rem;
+  animation: fadeInSection 2s ease-out 1.5s forwards;
+}
+
+@keyframes fadeInSection {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.explore-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #16213e;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+@keyframes fadeInContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #111;
+}
+
+/* Button styling */
+.btn {
+  padding: 15px 25px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Landing section styling */
+#landing-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Explore section styling */
+#explore-section {
+  height: 100vh;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contact section styling */
+#contact-section {
+  height: 100vh;
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Contact page styling */
+#contact-page {
+  text-align: center;
+  padding: 20px;
+}
+
+form {
+  margin-top: 20px;
+  display: inline-block;
+  text-align: left;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #444;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+form button {
+  background-color: #28a745;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #218838;
+}
